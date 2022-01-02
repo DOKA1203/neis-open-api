@@ -48,5 +48,9 @@ interface NeisOpenApi {
         @Query("Type") type: String,
         @Query("pIndex") pIndex: Int = 1,
         @Query("pSize") pSize: Int = 100,
+        @Query("ATPT_OFCDC_SC_CODE") sido: String? = null,
+        @Query("SD_SCHUL_CODE") schoolCode: String? = null,
+        @Query("SCHUL_NM") schoolName: String? = null,
+        @Query("SCHUL_KND_SC_NM") schoolType: String? = null,
     ): Call<SchoolInformation>
 }
